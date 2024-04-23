@@ -144,7 +144,7 @@ resource "aws_eks_node_group" "frontend" {
   disk_size = "20"
   instance_types = ["t3.small"]
   remote_access {
-    ec2_ssh_key = "terraform"
+    ec2_ssh_key = "dpp"
     source_security_group_ids = [var.sg_ids]
   } 
 
